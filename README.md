@@ -4,7 +4,7 @@ Homebrew tap for [waddleloop](https://github.com/askrubberduck/waddleloop) — g
 
 ```sh
 brew install askrubberduck/tap/wl           # stable pointer
-brew install askrubberduck/tap/wl@latest    # latest pointer
+brew install askrubberduck/tap/wl-latest    # latest pointer
 ```
 
 Both pointers install the same five binaries (`wl`, `wld`, `wl-mcp`, `wl-web`, `wltrust`).
@@ -13,7 +13,7 @@ Both pointers install the same five binaries (`wl`, `wld`, `wl-mcp`, `wl-web`, `
 
 | File | Pointer | Updated by |
 |---|---|---|
-| `Formula/wl@latest.rb` | latest — most recent `vX.Y.Z` tag | GoReleaser, on every release (`waddleloop/.github/workflows/release.yml`) |
+| `Formula/wl-latest.rb` | latest — most recent `vX.Y.Z` tag | GoReleaser, on every release (`waddleloop/.github/workflows/release.yml`) |
 | `Formula/wl.rb` | stable — promoted after a soak window | `waddleloop/.github/workflows/promote-stable.yml` |
 
 Promotion is one-way (`latest` → `stable`); stable never moves backward. Both

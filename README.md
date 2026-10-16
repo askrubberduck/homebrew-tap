@@ -20,3 +20,10 @@ Promotion is one-way (`latest` → `stable`); stable never moves backward. Both
 formulas point at the same signed artifacts on GitHub Releases (cosign keyless).
 
 Neither formula exists until the first release / first promotion.
+
+## duckdock
+
+```sh
+brew install askrubberduck/tap/duckdock              # CLI
+brew install --cask askrubberduck/tap/duckdock-app   # macOS app (Apple silicon)
+```

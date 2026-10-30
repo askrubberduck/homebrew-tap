@@ -9,24 +9,24 @@ Install (Homebrew 7 loads a third-party tap only once you trust it):
 ```sh
 brew tap askrubberduck/tap
 brew trust --tap askrubberduck/tap
-brew install askrubberduck/tap/duckdock              # CLI and TUI
-brew install --cask askrubberduck/tap/duckdock-app   # macOS app (Apple silicon)
+brew install --cask askrubberduck/tap/duckdock   # macOS (Apple silicon): app, CLI and TUI
+brew install askrubberduck/tap/duckdock          # Linux: CLI and TUI
 ```
 
 Update. Each duckdock release updates this tap; `brew update` fetches it:
 
 ```sh
 brew update
-brew upgrade duckdock
-brew upgrade --cask duckdock-app
+brew upgrade --cask duckdock   # macOS
+brew upgrade duckdock          # Linux
 ```
 
 Force. If `brew info askrubberduck/tap/duckdock` still shows an old version, or to reinstall the same one:
 
 ```sh
 brew update --force
-brew reinstall duckdock
-brew reinstall --cask duckdock-app
+brew reinstall --cask duckdock   # macOS
+brew reinstall duckdock          # Linux
 ```
 
 A running host daemon keeps its old version until it restarts; the app offers the restart.

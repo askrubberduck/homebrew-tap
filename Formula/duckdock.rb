@@ -1,35 +1,35 @@
 class Duckdock < Formula
   desc "Run Claude Code, Codex and opencode sessions on your SSH hosts from one TUI"
   homepage "https://github.com/askrubberduck/homebrew-tap"
-  version "0.2.83"
+  version "0.2.84"
 
   # macOS gets the cask, whose app carries this binary. The urls stay outside on_linux: a formula
   # with no url on macOS fails to load, which breaks brew cleanup there.
   depends_on :linux
 
   on_intel do
-    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.83/duckdock-linux-x64.gz"
-    sha256 "a30f0ef98ac7a726d5b6fe624f376aa747a47ec0724ab46330d83dfa9c479dc9"
+    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.84/duckdock-linux-x64.gz"
+    sha256 "fa65225e680d7c52c2cefc6224b9e34bf25f00a41d38a9d78bfcd62aa270e42c"
   end
   on_arm do
-    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.83/duckdock-linux-arm64.gz"
-    sha256 "599b823e9a00f008120579398a98118724827205bca224ffdc005182dae724d7"
+    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.84/duckdock-linux-arm64.gz"
+    sha256 "cb5429b458d21f7be2df750d3adae0ac2d53de6c7b29f29cf953c548dc87c940"
   end
 
   # Builds `duckdock host add` copies to remote hosts; it looks in ../lib/duckdock.
   resource "darwin-arm64" do
-    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.83/duckdock-darwin-arm64"
-    sha256 "f9d5e45c416d1b087795956406c5c5051fbcb8753ca4144504011bc51b36ff6f"
+    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.84/duckdock-darwin-arm64"
+    sha256 "4537c27a310cd4078dafb45ad88e33b14f70d353f5069f6a3a597a0563c5a441"
   end
 
   resource "linux-x64" do
-    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.83/duckdock-linux-x64.gz"
-    sha256 "a30f0ef98ac7a726d5b6fe624f376aa747a47ec0724ab46330d83dfa9c479dc9"
+    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.84/duckdock-linux-x64.gz"
+    sha256 "fa65225e680d7c52c2cefc6224b9e34bf25f00a41d38a9d78bfcd62aa270e42c"
   end
 
   resource "linux-arm64" do
-    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.83/duckdock-linux-arm64.gz"
-    sha256 "599b823e9a00f008120579398a98118724827205bca224ffdc005182dae724d7"
+    url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.2.84/duckdock-linux-arm64.gz"
+    sha256 "cb5429b458d21f7be2df750d3adae0ac2d53de6c7b29f29cf953c548dc87c940"
   end
 
   def install

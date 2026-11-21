@@ -1,8 +1,8 @@
 cask "duckdock" do
-  version "0.3.0"
-  sha256 "eb5dfd89358f12dfbc9d7567f06ddcbe61e7e747c0cc4dfa1beec485d9447cd9"
+  version "0.4.0"
+  sha256 "b498a7b2e6a7feb4f1b024cd269c5db00a997685e2487d950b6064dfed54b942"
 
-  url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.3.0/duckdock-macos-arm64.app.zip"
+  url "https://github.com/askrubberduck/homebrew-tap/releases/download/duckdock-0.4.0/duckdock-macos-arm64.app.zip"
   name "duckdock"
   desc "Run Claude Code, Codex and opencode sessions on your SSH hosts from one TUI"
   homepage "https://github.com/askrubberduck/homebrew-tap"
